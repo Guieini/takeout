@@ -1,0 +1,263 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('User_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-user_id" data-rule="required" data-source="user/user/index" data-field="nickname" class="form-control selectpage" name="row[user_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Password')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-password" class="form-control" name="row[password]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Username')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-username" class="form-control" name="row[username]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Phone')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-phone" class="form-control" name="row[phone]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Gender')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-gender" class="form-control" name="row[gender]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Head_image')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-head_image" class="form-control" size="50" name="row[head_image]" type="textarea">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="faupload-head_image" class="btn btn-danger faupload" data-input-id="c-head_image" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp,image/webp" data-multiple="false" data-preview-id="p-head_image"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-head_image" class="btn btn-primary fachoose" data-input-id="c-head_image" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-head_image"></span>
+            </div>
+            <ul class="row list-inline faupload-preview" id="p-head_image"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Province')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-province" class="form-control" name="row[province]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('City')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class='control-relative'><input id="c-city" class="form-control" data-toggle="city-picker" name="row[city]" type="text"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Source')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-source" class="form-control" name="row[source]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Open_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-open_id" data-rule="required" data-source="open/index" class="form-control selectpage" name="row[open_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Union_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-union_id" data-rule="required" data-source="union/index" class="form-control selectpage" name="row[union_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Taobao_bill_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-taobao_bill_id" data-rule="required" data-source="taobao/bill/index" class="form-control selectpage" name="row[taobao_bill_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Jd_bill_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-jd_bill_id" data-rule="required" data-source="jd/bill/index" class="form-control selectpage" name="row[jd_bill_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pdd_bill_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pdd_bill_id" data-rule="required" data-source="pdd/bill/index" class="form-control selectpage" name="row[pdd_bill_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Level')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-level" class="form-control" name="row[level]" type="number" value="1">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Rebate_rate')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-rebate_rate" class="form-control" name="row[rebate_rate]" type="number" value="50">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Refund_order_count')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-refund_order_count" class="form-control" name="row[refund_order_count]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Confirmed_order_count')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-confirmed_order_count" class="form-control" name="row[confirmed_order_count]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Can_withdraw_money')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-can_withdraw_money" class="form-control" name="row[can_withdraw_money]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Can_not_withdraw_money')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-can_not_withdraw_money" class="form-control" name="row[can_not_withdraw_money]" type="text" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Can_withdraw_invite_money')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-can_withdraw_invite_money" class="form-control" name="row[can_withdraw_invite_money]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Can_not_withdraw_invite_money')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-can_not_withdraw_invite_money" class="form-control" name="row[can_not_withdraw_invite_money]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Mend_amount')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-mend_amount" class="form-control" name="row[mend_amount]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Sum_income')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sum_income" class="form-control" name="row[sum_income]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Order_count')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_count" class="form-control" name="row[order_count]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Order_refund')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_refund" class="form-control" name="row[order_refund]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Inviter_user_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-inviter_user_id" data-rule="required" data-source="inviter/user/index" class="form-control selectpage" name="row[inviter_user_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Invite_count')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-invite_count" class="form-control" name="row[invite_count]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Create_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[create_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Month_ranking_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-month_ranking_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[month_ranking_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Real_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-real_name" class="form-control" name="row[real_name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Zhifubao')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-zhifubao" class="form-control" name="row[zhifubao]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Apply_withdraw_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-apply_withdraw_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[apply_withdraw_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pre_can_withdraw_money')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pre_can_withdraw_money" class="form-control" name="row[pre_can_withdraw_money]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Zhifubao_error')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-zhifubao_error" class="form-control" name="row[zhifubao_error]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Withdraw_status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-withdraw_status" class="form-control" name="row[withdraw_status]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Mayi_import')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-mayi_import" class="form-control" name="row[mayi_import]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Subscribe_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-subscribe_type" class="form-control" name="row[subscribe_type]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Black_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-black_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[black_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Is_subscribe')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-is_subscribe" class="form-control" name="row[is_subscribe]" type="number" value="1">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Delete_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-delete_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[delete_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+        </div>
+    </div>
+</form>
