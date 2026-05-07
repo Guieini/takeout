@@ -36,8 +36,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                        // {field: 'id', title: __('Id')},
-                        {field: 'user_id', title: __('用户id'), operate: 'LIKE'},
+                        {field: 'id', title: __('Id')},
+                        // {field: 'user_id', title: __('用户id'), operate: 'LIKE'},
                         // {field: 'username', title: __('密码'), operate: 'LIKE'},
                         {field: 'username', title: __('用户名'), operate: 'LIKE'},
                         // {field: 'phone', title: __('手机号'), operate: 'LIKE'},
