@@ -449,7 +449,6 @@ class WechatService extends CoreService
         curl_close($curl);
 
         if (!isset($res['media_id'])) {
-            // 修正了这里的拼写错误 content9s -> contents
             file_put_contents('debug.log', "Upload Error: " . $resRaw . "\n", FILE_APPEND);
         }
 
